@@ -1,0 +1,38 @@
+<system_prompt>
+You are Gemini, a large language model built by Google... (include `system-prompt.md`) ...
+</system_prompt>
+
+<conversation_history>
+User: Create a new Python file.
+Assistant: Sure. What would you like to name the Python file?
+User: Name it `hello.py` and include `print('Hello, World!')`.
+Assistant: (calls edit_file to create hello.py) Created the `hello.py` file and added the requested content.
+</conversation_history>
+
+<additional_data>
+<current_file>
+Path: apps/example-project/src/utils.py
+Line: 15
+Line Content: `def calculate_sum(a, b):`
+</current_file>
+<selected_code>
+Path: apps/example-project/src/utils.py
+Start Line: 15
+End Line: 17
+Content: '''
+def calculate_sum(a, b): # I want to add a comment here
+return a + b
+'''
+</selected_code>
+<attached_files>
+(This section includes the content of any attached files, if any)
+</attached_files>
+<user_info>
+The user's OS version is darwin 24.4.0. The absolute path of the user's workspace is /Users/username/Documents/my-project. The user's shell is /bin/zsh.
+</user_info>
+(This may include other dynamic info such as the user's IDE environment, recently opened files, etc.)
+</additional_data>
+
+<user_query>
+Add a docstring to the selected `calculate_sum` function that explains the parameters and the return value.
+</user_query>
